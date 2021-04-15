@@ -1,0 +1,28 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /template
+spring:
+  application:
+    name: template
+#  jpa:
+#    show-sql: false
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+#  datasource:
+#    url: jdbc:mysql://192.168.0.81:3306/prog?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false 
+#    username: root
+#    password: Mitolol4151@
+#    hikari:
+#      connection-test-query: SELECT 1 FROM DUAL
+#      maximum-pool-size: 5
+prog.matoz.config:
+  time-zone: America/Sao_Paulo
+loggin:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
