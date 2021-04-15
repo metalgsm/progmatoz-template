@@ -10,4 +10,4 @@
 
 To report a vulnerability issue, create an issue in the project: progmatoz
 
-If you want, request a pull request in develop with the fix of the vulnerability
+If you want, do a pull request in develop with the fix of the vulnerability
