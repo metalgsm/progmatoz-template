@@ -1,8 +1,10 @@
 package com.prog.matoz.service;
 
-import java.util.ArrayList;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.prog.matoz.data.vo.ProductVO;
@@ -24,8 +26,10 @@ public class ProductService {
 		return ProductMocks.findById();
 	}
 	
-	public ArrayList<ProductVO> findAll() {
-		return ProductMocks.findAll();
+	public Page<ProductVO> findAll(Pageable pageable) {
+		var products = ProductMocks.findAll();
+		
+		return new PageImpl<>(products);
 	}
 
 	public ProductVO update(ProductVO productVO) {
