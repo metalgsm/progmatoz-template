@@ -16,7 +16,7 @@
 	<description>Template Microservice</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>16</java.version>
 	</properties>
 
 	<dependencies>
